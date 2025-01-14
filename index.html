@@ -7,6 +7,76 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
+
+<style>
+
+
+
+
+  
+  @keyframes fullstack {
+      0% {
+          animation-timing-function: ease-in;
+          opacity: 0;
+          transform: translateX(-250px);
+      }
+  
+      38% {
+          animation-timing-function: ease-out;
+          opacity: 1;
+          transform: translateX(0);
+      }
+  
+      55% {
+          animation-timing-function: ease-in;
+          transform: translateX(-68px);
+      }
+  
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+  
+  /* Aplicar la animación al h1 */
+  .animate-fullstack {
+      animation: fullstack 2s ease 0s 1 normal forwards;
+  }
+  
+      
+      /* Animación de rebote más lento */
+    @keyframes bounce-slow {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-15px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+    }
+  
+    /* Efecto de humo con dispersión */
+    @keyframes smoke {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translateY(-20px) scale(1.1);
+        opacity: 0.2;
+      }
+      100% {
+        transform: translateY(-20px) scale(1.2);
+        opacity: 0;
+      }
+    }
+  
+  
+    
+    </style>
 <body class="bg-black text-white absolute top-0 left-0 w-full">
 
 
@@ -33,12 +103,12 @@
             <!-- Contenido principal -->
             <div class="relative">
                 <!-- Nombre con efecto de rebote y animación personalizada -->
-                <h1 class="text-[15vh] font-bold grad mb-2 animate-fullstack text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+                <h1 class="text-[18vh] font-bold grad mb-2 animate-fullstack text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
                     Hi! I am Jhonathan R
                 </h1>
 
                 <!-- Subtítulo con efectos futuristas -->
-                <p class="text-white mb-8 text-[5vh]">
+                <p class="text-white mb-8 text-[10vh] font-bold">
                     Full Stack Developer
                 </p>
 
@@ -46,7 +116,7 @@
                 <p class="text-gray-300 max-w-md mx-auto">"Desarrollador apasionado por transformar ideas en experiencias interactivas y funcionales."</p>
 
                 <!-- Efecto de humo -->
-                <span class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/white-smoke.png')] opacity-20 animate-smoke"></span>
+                <span class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/white-smoke.png')] opacity-20 "></span>
             </div>
 
         </div>
@@ -55,107 +125,51 @@
 
   
 
+<div class="w-full h-[5px] mt-20 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 mx-auto my-8 animate-pulse"></div>
 
 
 
-<div class="px-7 flex flex-wrap  mt-[20vh] items-center justify-center">
-
-  <section class="about-me py-12 px-8 mx-auto rounded-lg flex justify-around w-full">
-    <div class="w-[60vh] mx-auto text-center bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-8 rounded-lg border-2 border-gray-600 shadow-lg">
-      <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 mb-6">
-        Sobre mí
-      </h2>
-      <p class="text-xl text-gray-300 leading-relaxed mb-4">
-        Disfruto explorando los procesos detrás de las aplicaciones web, desde el diseño hasta la implementación de un backend eficiente, siempre buscando soluciones que optimicen la experiencia del usuario y potencien el rendimiento del sistema.
-      </p>
-    </div>
-    <img src="./electric.png" alt="Project 3" class="w-[70vh] h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out"><!-- Neon Border Effect -->
-    <div class="w-[60vh] mx-auto text-center bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-8 rounded-lg border-2 border-gray-600 shadow-lg">
-      <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 mb-6">
-        Sobre mí
-      </h2>
-      <p class="text-xl text-gray-300 leading-relaxed">
-        Con mi grado superior en Desarrollo de aplicaciones Web, me sigo formando con cursos adicionales relacionados con Ciberseguridad y Desarrollo de software. Algunos de mis proyectos en esta página son los más relevantes realizados por mí.
-      </p>
-    </div>
+<section class="about-me py-12 px-8 mx-auto rounded-lg flex flex-wrap justify-center items-center gap-6 mt-[22vh]">
   
-  </section>
+  <div class="+ w-full flex justify-around mb-10">
+  <div class="w-[89vh] bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-8 rounded-lg  shadow-indigo-500 shadow-sm">
+    <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 mb-6 text-center">
+      Sobre mí
+    </h2>
+    <p class="text-xl text-gray-300 font-semibold">
+      Soy un programador graduado en Técnico Superior en Desarrollo de Aplicaciones Web. Gracias a mi experiencia laboral previa, he adquirido habilidades en diversas áreas que me permiten tener una visión integral al abordar proyectos y comprender sus necesidades. Me apasiona tanto el diseño creativo en frontend como la arquitectura y el diseño en backend. Disfruto explorando y aprendiendo cada día más sobre los procesos detrás de las aplicaciones web, desde la creación del diseño hasta la implementación de un backend eficiente. Siempre estoy en busca de soluciones que optimicen la experiencia del usuario y mejoren el rendimiento del sistema.
+    </p>
+  </div>
 
-  
-  
-  <style>
-@keyframes fullstack {
-    0% {
-        animation-timing-function: ease-in;
-        opacity: 0;
-        transform: translateX(-250px);
-    }
+  <div class="w-[60vh]">
+    <img src="./perfil.jpg" alt="">
+  </div>
 
-    38% {
-        animation-timing-function: ease-out;
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    55% {
-        animation-timing-function: ease-in;
-        transform: translateX(-68px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Aplicar la animación al h1 */
-.animate-fullstack {
-    animation: fullstack 2s ease 0s 1 normal forwards;
-}
-
-    
-    /* Animación de rebote más lento */
-  @keyframes bounce-slow {
-    0% {
-      transform: translateY(0);
-    }
-    25% {
-      transform: translateY(-15px);
-    }
-    50% {
-      transform: translateY(0);
-    }
-  }
-
-  /* Efecto de humo con dispersión */
-  @keyframes smoke {
-    0% {
-      transform: translateY(0) scale(1);
-      opacity: 0.5;
-    }
-    50% {
-      transform: translateY(-20px) scale(1.1);
-      opacity: 0.2;
-    }
-    100% {
-      transform: translateY(-20px) scale(1.2);
-      opacity: 0;
-    }
-  }
-
-  /* Aplicar la animación del humo */
-  .animate-smoke {
-    animation: smoke 9s infinite;
-    color: whitesmoke
-  }
+</div>
 
 
-  /* Rebote lento */
-  .animate-bounce-slow {
-    animation: bounce-slow 2s infinite;
-  }
-  
-  </style>
+
+<!-- Cuadros adicionales futuristas -->
+<div class="flex flex-wrap justify-center gap-6 w-full mt-10">
+  <!-- Cuadro 1 -->
+  <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center p-6 rounded-lg shadow-lg w-[40vh] hover:scale-105 transition-transform duration-300">
+    <p class="text-lg font-semibold">Priorizo la colaboración con los clientes, fomentando la comunicación abierta.</p>
+  </div>
+
+  <!-- Cuadro 2 -->
+  <div class="bg-gray-800 text-white text-center p-8 rounded-lg shadow-lg w-[50vh] hover:bg-gray-700 hover:scale-105 transition-transform duration-300">
+    <p class="text-lg font-semibold">Trabajo en equipo y adapto mis habilidades a las necesidades del proyecto.</p>
+  </div>
+
+  <!-- Cuadro 3 -->
+  <div class="bg-gradient-to-r from-pink-500 to-indigo-600 text-white text-center p-10 rounded-lg shadow-lg w-[60vh] hover:scale-105 transition-transform duration-300">
+    <p class="text-lg font-semibold">Comprometido con el crecimiento profesional y la mejora continua.</p>
+  </div>
+</div>
+</section>
+
+
+
   
   
     
@@ -229,7 +243,7 @@
           <p class="text-gray-300">MongoDB</p>
         </div>
       </div>
-  
+ 
       <!-- Other Skills Section -->
       <h3 class="text-center text-2xl font-semibold mb-4 mt-5">Other Skills</h3>
       <div class="flex flex-wrap justify-center gap-10">
@@ -267,64 +281,132 @@
             <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
                 <img src="./bannerbrich.png" alt="Project 1" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
             </div>
-            <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">E-commerce Website</h3>
-            <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">An online platform for buying and selling products, integrated with payment gateways.</p>
-            <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+            <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Services Tax</h3>
+
+            <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+            Desarrollé una moderna aplicación web para una empresa americana de contabilidad, enfocada en brindar una experiencia dinámica, un diseño elegante y una gestión eficiente de la información.
+            </p>
+            <div class="flex flex-wrap justify-start gap-4 mt-2">
+              <i class="fab fa-react text-blue-400 text-2xl" title="React"></i>
+              <i class="fab fa-css3-alt text-teal-400 text-2xl" title="Tailwind CSS"></i>
+              <i class="fas fa-database text-blue-600 text-2xl" title="MySQL"></i>
+              <i class="fab fa-html5 text-orange-500 text-2xl"></i>
+              
+          </div>
+            
+        
         </div>
 
         <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-            <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-                <img src="./ong.png" alt="Project 2" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
-            </div>
-            <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Project 2</h3>
-            <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">A custom dashboard for data analysis and visualization with real-time updates.</p>
-            <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+          <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+              <img src="./ong.png" alt="ONG Website" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">ONG Website</h3>
+          <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+            Trabaje con un equipo en la creación de un proyecto piloto para una ONG, abarcando diseño, desarrollo y elaboracion propuesta.
+          </p>
+          <div class="flex flex-wrap justify-start gap-4 mt-2">
+              <i class="fab fa-figma text-purple-500 text-2xl" title="Figma"></i>
+              <i class="fab fa-css3-alt text-teal-400 text-2xl" title="CSS"></i>
+              <i class="fab fa-html5 text-orange-500 text-2xl" title="HTML"></i>
+              <i class="fas fa-paint-brush text-pink-400 text-2xl" title="UI/UX"></i>
+          </div>
+          <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+      </div>
+      
+      <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
+        <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+            <img src="./power.png" alt="Energy Consumption App" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
         </div>
-
-        <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-            <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-                <img src="./power.png" alt="Project 3" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
-            </div>
-            <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Project 3</h3>
-            <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">A social media platform with real-time messaging and notifications system.</p>
-            <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+        <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Energy Consumption Tracker</h3>
+        <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+          Diseñé y desarrollé una plataforma para gestionar dispositivos y calcular su consumo energético. La aplicación permite generar reportes mensuales proyectados para ayudar a los usuarios a optimizar su consumo y reducir costos innecesarios. Con una interfaz intuitiva, los usuarios pueden exportar los informes a Excel. Este proyecto ofrece una solución innovadora para promover la eficiencia energética tanto en hogares como en empresas.
+        </p>
+        <div class="flex flex-wrap items-center gap-2 text-white">
+            <i class="fab fa-vuejs text-green-400 text-2xl"></i>
+            <i class="fab fa-js-square text-yellow-400 text-2xl"></i>
+            <i class="fab fa-node-js text-green-500 text-2xl"></i>
+            <i class="fab fa-css3-alt text-blue-400 text-2xl"></i>
+            <i class="fab fa-git-alt text-orange-500 text-2xl"></i>
+            <i class="fas fa-database text-blue-600 text-2xl"></i>
+            <i class="fas fa-file-excel text-green-500 text-2xl"></i>
         </div>
+        <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+    </div>
+    
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8 mt-4">
-        <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-            <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-                <img src="finance.png" alt="Project 1" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
-            </div>
-            <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">E-commerce Website</h3>
-            <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">An online platform for buying and selling products, integrated with payment gateways.</p>
-            <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+      <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
+        <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+            <img src="finance.png" alt="Project 1" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
         </div>
+        <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Financial Management App</h3>
+        <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+            Diseñé y desarrollé una plataforma para gestionar usuarios, gastos e ingresos, utilizando JWT para autenticación y Node.js con Express para el backend. Implementé operaciones CRUD con Axios en una API RESTful y gestioné la base de datos con MySQL. 
+        </p>
+        <div class="flex justify-start gap-4">
+            <i class="fab fa-vuejs text-green-400 text-3xl"></i>
+            <i class="fab fa-node-js text-green-500 text-3xl"></i>
+            <i class="fab fa-github text-gray-800 text-3xl"></i>
+            <i class="fab fa-figma text-purple-500 text-3xl"></i>
+            <i class="fab fa-js-square text-yellow-400 text-3xl"></i>
+        </div>
+        <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+    </div>
+    
+    <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
+      <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+          <img src="./pizzabug.png" alt="Pizza Bug" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Pizza Bug Restaurant</h3>
+      <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+          Diseño de una propuesta para el cliente con restaurante "Pizza Bug", utilizando Figma para la maquetación, y Tailwind CSS y CSS para crear una interfaz visualmente atractiva y fácil de usar.
+      </p>
+      <div class="flex justify-start gap-4">
+          <i class="fab fa-figma text-purple-500 text-3xl"></i>
+          <i class="fab fa-css3-alt text-blue-500 text-3xl"></i>
+          <i class="fab fa-tailwindcss text-teal-400 text-3xl"></i>
+          <i class="fab fa-github text-gray-800 text-3xl"></i>
+      </div>
+      <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+  </div>
+  
+  <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
+    <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+        <img src="./shoes2.png" alt="Ecommerce Air Stroke" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+    </div>
+    <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Ecommerce Air Stroke</h3>
+    <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+        Desarrollé un ecommerce en línea para la venta de zapatillas, con un diseño moderno y futurista. Utilicé Vue.js para el frontend, Flask y Python para el backend, y Tailwind CSS para asegurar una interfaz responsiva. Implementé funcionalidades como el login, gestión de productos y pagos en línea.
+    </p>
+    <div class="flex justify-start gap-4">
+        <i class="fab fa-figma text-purple-500 text-3xl"></i>
+        <i class="fab fa-python text-yellow-500 text-3xl"></i>
+        <i class="fab fa-vuejs text-green-500 text-3xl"></i>
+        <i class="fab fa-css3-alt text-blue-500 text-3xl"></i>
+        <i class="fab fa-github text-gray-800 text-3xl"></i>
+    </div>
+    <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
+</div>
 
-        <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-            <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-                <img src="me.png" alt="Project 2" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
-            </div>
-            <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Project 2</h3>
-            <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">A custom dashboard for data analysis and visualization with real-time updates.</p>
-            <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
-        </div>
-
-        <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-            <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-                <img src="https://graphicgoogle.com/wp-content/uploads/2023/12/Free-Premium-Brand-3D-Device-Website-Mockup.jpg" alt="Project 3" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
-            </div>
-            <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Project 3</h3>
-            <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">A social media platform with real-time messaging and notifications system.</p>
-            <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
-        </div>
+      </div>
     </div>
 </section>
 
   <!-- Footer Section -->
-  <footer class="bg-gray-900 py-8 text-center text-gray-400">
-    <p>&copy; 2025 Toni's Portfolio | All rights reserved</p>
-    <p>Follow me on <a href="https://github.com" class="text-blue-500 hover:text-blue-300">GitHub</a> | <a href="https://www.linkedin.com" class="text-blue-500 hover:text-blue-300">LinkedIn</a></p>
-  </footer>
+<footer class="bg-gray-900 py-8 text-center text-gray-400">
+    <p>&copy; 2025 jrldev | All rights reserved</p>
+    <p class="flex justify-center items-center gap-4">
+        <span>Follow me on</span>
+        <a href="https://github.com" class="text-blue-500 hover:text-blue-300 transition duration-300 ease-in-out">
+            <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com" class="text-blue-500 hover:text-blue-300 transition duration-300 ease-in-out">
+            <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+    </p>
+</footer>
+
 
 
 </body>
