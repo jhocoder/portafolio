@@ -93,35 +93,38 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="text-center py-16 relative z-10 px-4 sm:px-8 md:px-16">
+<!-- Hero Section -->
+<section class="text-center py-16 relative z-10 px-4 sm:px-8 md:px-16">
 
-    <!-- Contenedor de la sección -->
-    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-        <div class="flex justify-around mb-8 w-full">
+  <!-- Contenedor de la sección -->
+  <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="flex justify-around mb-8 w-full">
 
-            <!-- Contenido principal -->
-            <div class="relative">
-                <!-- Nombre con efecto de rebote y animación personalizada -->
-                <h1 class="text-[18vh] font-bold grad mb-2 animate-fullstack text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-                    Hi! I am Jhonathan R
-                </h1>
+          <!-- Contenido principal -->
+          <div class="relative">
+              <!-- Nombre con efecto de rebote y animación personalizada -->
+              <h1 class="text-[8vh] md:text-[18vh] font-bold grad mb-2 animate-fullstack text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+                  Hi! I am Jhonathan R
+              </h1>
 
-                <!-- Subtítulo con efectos futuristas -->
-                <p class="text-white mb-8 text-[10vh] font-bold">
-                    Full Stack Developer
-                </p>
+              <!-- Subtítulo con efectos futuristas -->
+              <p class="text-white mb-8 text-[5vh] md:text-[10vh] font-bold">
+                  Full Stack Developer
+              </p>
 
-                <!-- Descripción con texto gris -->
-                <p class="text-gray-300 max-w-md mx-auto">"Developer passionate about transforming ideas into interactive and functional experiences."</p>
+              <!-- Descripción con texto gris -->
+              <p class="text-gray-300 max-w-md mx-auto text-[3vh] md:text-base">
+                  "Developer passionate about transforming ideas into interactive and functional experiences."
+              </p>
 
-                <!-- Efecto de humo -->
-                <span class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/white-smoke.png')] opacity-20 "></span>
-            </div>
+              <!-- Efecto de humo -->
+              <span class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/white-smoke.png')] opacity-20"></span>
+          </div>
 
-        </div>
-    </div>
+      </div>
+  </div>
 </section>
+
 
   
 
@@ -129,45 +132,55 @@
 
 
 
-<section class="about-me py-12 px-8 mx-auto rounded-lg flex flex-wrap justify-center items-center gap-6 mt-[22vh]">
+<section class="about-me py-12 px-8 mx-auto rounded-lg flex flex-wrap justify-center items-center gap-6 mt-[20vh] md:mt-[22vh]">
   
-  <div class="+ w-full flex justify-around mb-10">
-  <div class="w-[89vh] bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-8 rounded-lg  shadow-indigo-500 shadow-sm">
-    <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 mb-6 text-center">
-      Sobre mí
-    </h2>
-    <p class="text-xl text-gray-300 font-semibold">
-      I am a programmer with a degree in advanced techniques in Web Software Application Development. Thanks to my previous work experience, I have acquired skills in various areas that allow me to have a comprehensive vision when approaching projects and understanding their needs. I am passionate about both creative frontend design and backend architecture and design. I enjoy exploring and learning more every day about the processes behind web applications, from creating the design to implementing an efficient backend. I'm always looking for solutions that optimize the user experience and improve system performance.
-    </p>
+  <!-- Contenedor principal -->
+  <div class="w-full flex flex-col md:flex-row justify-around mb-10 items-center gap-6">
+    
+    <!-- Sección de texto "Sobre mí" -->
+    <div class="w-full md:w-[89vh] bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 md:p-8 rounded-lg shadow-indigo-500 shadow-sm">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 mb-6 text-center">
+        Sobre mí
+      </h2>
+      <p class="text-lg md:text-xl text-gray-300 font-semibold">
+        I am a programmer with a degree in advanced techniques in Web Software Application Development. Thanks to my previous work experience, I have acquired skills in various areas that allow me to have a comprehensive vision when approaching projects and understanding their needs. I am passionate about both creative frontend design and backend architecture and design. I enjoy exploring and learning more every day about the processes behind web applications, from creating the design to implementing an efficient backend. I'm always looking for solutions that optimize the user experience and improve system performance.
+      </p>
+    </div>
+
+    <!-- Imagen de perfil -->
+    <div class="w-[50vh] md:w-[60vh] flex justify-center items-center">
+      <img src="./perfil.jpg" alt="Perfil" class="rounded-lg shadow-lg">
+    </div>
+
   </div>
 
-  <div class="w-[60vh]">
-    <img src="./perfil.jpg" alt="">
+  <!-- Pinturas futuristas adicionales -->
+  <div class="flex flex-wrap justify-center gap-6 w-full mt-10">
+
+    <!-- Cuadro 1 -->
+    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center p-6 rounded-lg shadow-lg w-[35vh] md:w-[40vh] hover:scale-105 transition-transform duration-300">
+      <p class="text-base md:text-lg font-semibold">
+        I prioritize collaboration with clients, encouraging open communication.
+      </p>
+    </div>
+
+    <!-- Cuadro 2 -->
+    <div class="bg-gray-800 text-white text-center p-6 md:p-8 rounded-lg shadow-lg w-[45vh] md:w-[50vh] hover:bg-gray-700 hover:scale-105 transition-transform duration-300">
+      <p class="text-base md:text-lg font-semibold">
+        I work as a team and adapt my skills to the needs of the project.
+      </p>
+    </div>
+
+    <!-- Cuadro 3 -->
+    <div class="bg-gradient-to-r from-pink-500 to-indigo-600 text-white text-center p-8 md:p-10 rounded-lg shadow-lg w-[50vh] md:w-[60vh] hover:scale-105 transition-transform duration-300">
+      <p class="text-base md:text-lg font-semibold">
+        Committed to professional growth and continuous improvement.
+      </p>
+    </div>
+
   </div>
-
-</div>
-
-
-
-
-<!-- Additional futuristic paintings -->
-<div class="flex flex-wrap justify-center gap-6 w-full mt-10">
-  <!-- Table 1 -->
-  <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center p-6 rounded-lg shadow-lg w-[40vh] hover:scale-105 transition-transform duration-300">
-    <p class="text-lg font-semibold">I prioritize collaboration with clients, encouraging open communication.</p>
-  </div>
-
-  <!-- Table 2 -->
-  <div class="bg-gray-800 text-white text-center p-8 rounded-lg shadow-lg w-[50vh] hover:bg-gray-700 hover:scale-105 transition-transform duration-300">
-    <p class="text-lg font-semibold">I work as a team and adapt my skills to the needs of the project.</p>
-  </div>
-
-  <!-- Table 3 -->
-  <div class="bg-gradient-to-r from-pink-500 to-indigo-600 text-white text-center p-10 rounded-lg shadow-lg w-[60vh] hover:scale-105 transition-transform duration-300">
-    <p class="text-lg font-semibold">Committed to professional growth and continuous improvement.</p>
-  </div>
-</div>
 </section>
+
 
 
 
