@@ -74,8 +74,18 @@
       }
     }
   
-  
-    
+    .neon-text {
+  font-size: 72px; /* Tamaño más grande */
+  color: #00e6e6;
+}
+
+.neon-icon:hover {
+  color: #00e6e6;
+  text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6, 0 0 30px #00e6e6, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+  transform: scale(1.1); /* Hace que el icono se agrande al pasar el mouse */
+}
+
+
     </style>
 <body class="bg-black text-white absolute top-0 left-0 w-full">
 
@@ -291,130 +301,139 @@
 <section id="projects" class="py-16 bg-gradient-to-b from-gray-900 to-black">
   <h2 class="text-center text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-600 mb-12">Projects</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8">
-      <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-          <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-              <img src="./bannerbrich.png" alt="Project 1" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
-          </div>
-          <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Services Tax</h3>
+    <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
+      <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+        <img src="./bannerbrich.png" alt="Project 1" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Services Tax</h3>
+      <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+        I developed a modern web application for an American accounting firm, focused on providing a dynamic experience, sleek design, and efficient information management.
+      </p>
+      <div class="flex flex-wrap justify-start gap-4 mt-2">
+        <i class="fab fa-react text-blue-400 text-2xl" title="React"></i>
+        <i class="fab fa-css3-alt text-teal-400 text-2xl" title="Tailwind CSS"></i>
+        <i class="fas fa-database text-blue-600 text-2xl" title="MySQL"></i>
+        <i class="fab fa-html5 text-orange-500 text-2xl"></i>
+      </div>
+    </div>
 
-          <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
-              I developed a modern web application for an American accounting firm, focused on providing a dynamic experience, sleek design, and efficient information management.
-          </p>
-          <div class="flex flex-wrap justify-start gap-4 mt-2">
-            <i class="fab fa-react text-blue-400 text-2xl" title="React"></i>
-            <i class="fab fa-css3-alt text-teal-400 text-2xl" title="Tailwind CSS"></i>
-            <i class="fas fa-database text-blue-600 text-2xl" title="MySQL"></i>
-            <i class="fab fa-html5 text-orange-500 text-2xl"></i>
-        </div>
+    <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
+      <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+        <img src="./ong.png" alt="ONG Website" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">ONG Website</h3>
+      <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+        I worked with a team to create a pilot project for an ONG, covering design, development, and proposal creation.
+      </p>
+      <div class="flex flex-wrap justify-start gap-4 mt-2">
+        <i class="fab fa-figma text-purple-500 text-2xl" title="Figma"></i>
+        <i class="fab fa-css3-alt text-teal-400 text-2xl" title="CSS"></i>
+        <i class="fab fa-html5 text-orange-500 text-2xl" title="HTML"></i>
+        <i class="fas fa-paint-brush text-pink-400 text-2xl" title="UI/UX"></i>
       </div>
 
-      <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-        <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-            <img src="./ong.png" alt="ONG Website" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
-        </div>
-        <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">ONG Website</h3>
-        <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
-          I worked with a team to create a pilot project for an ONG, covering design, development, and proposal creation.
-        </p>
-        <div class="flex flex-wrap justify-start gap-4 mt-2">
-            <i class="fab fa-figma text-purple-500 text-2xl" title="Figma"></i>
-            <i class="fab fa-css3-alt text-teal-400 text-2xl" title="CSS"></i>
-            <i class="fab fa-html5 text-orange-500 text-2xl" title="HTML"></i>
-            <i class="fas fa-paint-brush text-pink-400 text-2xl" title="UI/UX"></i>
-        </div>
-        <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
     </div>
     
     <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
       <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-          <img src="./power.png" alt="Energy Consumption App" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+        <img src="./power.png" alt="Energy Consumption App" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
       </div>
       <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Energy Consumption Tracker</h3>
       <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
         I designed and developed a platform to manage devices and calculate their energy consumption. The app generates monthly projected reports to help users optimize consumption and reduce unnecessary costs. With an intuitive interface, users can export reports to Excel. This project offers an innovative solution to promote energy efficiency in both homes and businesses.
       </p>
       <div class="flex flex-wrap items-center gap-2 text-white">
-          <i class="fab fa-vuejs text-green-400 text-2xl"></i>
-          <i class="fab fa-js-square text-yellow-400 text-2xl"></i>
-          <i class="fab fa-node-js text-green-500 text-2xl"></i>
-          <i class="fab fa-css3-alt text-blue-400 text-2xl"></i>
-          <i class="fab fa-git-alt text-orange-500 text-2xl"></i>
-          <i class="fas fa-database text-blue-600 text-2xl"></i>
-          <i class="fas fa-file-excel text-green-500 text-2xl"></i>
+        <i class="fab fa-vuejs text-green-400 text-2xl"></i>
+        <i class="fab fa-js-square text-yellow-400 text-2xl"></i>
+        <i class="fab fa-node-js text-green-500 text-2xl"></i>
+        <i class="fab fa-css3-alt text-blue-400 text-2xl"></i>
+        <i class="fab fa-git-alt text-orange-500 text-2xl"></i>
+        <i class="fas fa-database text-blue-600 text-2xl"></i>
+        <i class="fas fa-file-excel text-green-500 text-2xl"></i>
       </div>
-      <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
-  </div>
+
+    </div>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8 mt-4">
     <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
       <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-          <img src="finance.png" alt="Project 1" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+        <img src="finance.png" alt="Project 1" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
       </div>
       <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Financial Management App</h3>
       <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
-          I designed and developed a platform to manage users, expenses, and income, using JWT for authentication and Node.js with Express for the backend. I implemented CRUD operations with Axios in a RESTful API and managed the database with MySQL.
+        I designed and developed a platform to manage users, expenses, and income, using JWT for authentication and Node.js with Express for the backend. I implemented CRUD operations with Axios in a RESTful API and managed the database with MySQL.
       </p>
       <div class="flex justify-start gap-4">
-          <i class="fab fa-vuejs text-green-400 text-3xl"></i>
-          <i class="fab fa-node-js text-green-500 text-3xl"></i>
-          <i class="fab fa-github text-gray-800 text-3xl"></i>
-          <i class="fab fa-figma text-purple-500 text-3xl"></i>
-          <i class="fab fa-js-square text-yellow-400 text-3xl"></i>
+        <i class="fab fa-vuejs text-green-400 text-3xl"></i>
+        <i class="fab fa-node-js text-green-500 text-3xl"></i>
+        <i class="fab fa-github text-gray-800 text-3xl"></i>
+        <i class="fab fa-figma text-purple-500 text-3xl"></i>
+        <i class="fab fa-js-square text-yellow-400 text-3xl"></i>
       </div>
-      <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
-  </div>
-  
-  <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-    <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-        <img src="./pizzabug.png" alt="Pizza Bug" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
     </div>
-    <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Pizza Bug Restaurant</h3>
-    <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+    
+    <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
+      <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+        <img src="./pizzabug.png" alt="Pizza Bug" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Pizza Bug Restaurant</h3>
+      <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
         Designed a proposal for the client with the "Pizza Bug" restaurant, using Figma for layout, and Tailwind CSS and CSS to create a visually appealing and user-friendly interface.
-    </p>
-    <div class="flex justify-start gap-4">
+      </p>
+      <div class="flex justify-start gap-4">
         <i class="fab fa-figma text-purple-500 text-3xl"></i>
         <i class="fab fa-css3-alt text-blue-500 text-3xl"></i>
         <i class="fab fa-tailwindcss text-teal-400 text-3xl"></i>
         <i class="fab fa-github text-gray-800 text-3xl"></i>
-    </div>
-    <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
-</div>
+      </div>
 
-<div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
-  <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
-      <img src="./shoes2.png" alt="Ecommerce Air Stroke" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
-  </div>
-  <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Ecommerce Air Stroke</h3>
-  <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
-      I developed an online ecommerce platform for selling shoes, with a modern and futuristic design. I used Vue.js for the frontend, Flask and Python for the backend, and Tailwind CSS for a responsive interface. I implemented features like login, product management, and online payments.
-  </p>
-  <div class="flex justify-start gap-4">
-      <i class="fab fa-figma text-purple-500 text-3xl"></i>
-      <i class="fab fa-python text-yellow-500 text-3xl"></i>
-      <i class="fab fa-vuejs text-green-500 text-3xl"></i>
-      <i class="fab fa-css3-alt text-blue-500 text-3xl"></i>
-      <i class="fab fa-github text-gray-800 text-3xl"></i>
-  </div>
-  <a href="#" class="absolute bottom-4 right-4 text-blue-500 group-hover:text-blue-400 transition-all duration-300 ease-in-out text-sm font-medium">Learn More</a>
-</div>
     </div>
+
+    <div class="bg-gray-900 rounded-lg p-4 shadow-2xl hover:shadow-xl transform transition-all duration-300 hover:scale-105 relative group">
+      <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4 transition-all duration-300 ease-in-out group-hover:scale-105">
+        <img src="./shoes2.png" alt="Ecommerce Air Stroke" class="w-full h-full object-cover group-hover:opacity-70 transition-all duration-300 ease-in-out">
+      </div>
+      <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-all duration-300 ease-in-out">Ecommerce Air Stroke</h3>
+      <p class="text-gray-300 mb-4 group-hover:text-gray-100 transition-all duration-300 ease-in-out">
+        I developed an online ecommerce platform for selling shoes, with a modern and futuristic design. I used Vue.js for the frontend, Flask and Python for the backend, and Tailwind CSS for a responsive interface. I implemented features like login, product management, and online payments.
+      </p>
+      <div class="flex justify-start gap-4">
+        <i class="fab fa-figma text-purple-500 text-3xl"></i>
+        <i class="fab fa-python text-yellow-500 text-3xl"></i>
+        <i class="fab fa-vuejs text-green-400 text-3xl"></i>
+        <i class="fab fa-node-js text-green-500 text-3xl"></i>
+        <i class="fab fa-tailwindcss text-teal-400 text-3xl"></i>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-
-  <!-- Footer Section -->
-<footer class="bg-gray-900 py-8 text-center text-gray-400">
-    <p>&copy; 2025 jrldev | All rights reserved</p>
-    <p class="flex justify-center items-center gap-4">
-        <span>Follow me on</span>
-        <a href="https://github.com" class="text-blue-500 hover:text-blue-300 transition duration-300 ease-in-out">
-            <i class="fab fa-github text-2xl"></i>
-        </a>
-        <a href="https://www.linkedin.com" class="text-blue-500 hover:text-blue-300 transition duration-300 ease-in-out">
-            <i class="fab fa-linkedin text-2xl"></i>
-        </a>
-    </p>
+<!-- Footer Section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-8">
+  <div class="container mx-auto text-center">
+    <!-- Main Portfolio Text with Neon Effect -->
+    <p class="text-sm mb-4 text-gray-300 font-semibold neon-text">jrldev Web Development Portfolio</p>
+    <div class="flex justify-center space-x-6">
+      <!-- GitHub Icon with Hover Effect -->
+      <a href="https://github.com" class="text-blue-500 hover:text-blue-300 transition duration-300 ease-in-out transform hover:scale-110 neon-icon" aria-label="Visit my GitHub">
+        <i class="fab fa-github text-3xl"></i>
+      </a>
+      <!-- LinkedIn Icon with Hover Effect -->
+      <a href="https://www.linkedin.com" class="text-blue-500 hover:text-blue-300 transition duration-300 ease-in-out transform hover:scale-110 neon-icon" aria-label="Visit my LinkedIn">
+        <i class="fab fa-linkedin text-3xl"></i>
+      </a>
+    </div>
+    <!-- Follow me Text with Neon Effect -->
+    <p class="text-sm mt-4 text-gray-400 neon-text">Follow me on GitHub and LinkedIn</p>
+  </div>
 </footer>
+
+
+
 
 
 
